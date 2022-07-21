@@ -1,0 +1,24 @@
+// *----------*
+// colors
+// *----------*
+
+$main-primary: #1B224C;
+$main-secondary:#F5A623;
+$color-white: #fff;
+$color-gray: #D5D5D5;
+$color-pale-gray: #F8F8F8;
+
+// *----------*
+// mixin
+// *----------*
+$breakpoints: (
+	"lg":"screen and (max-width:1024px)",
+  "md":"screen and (max-width:768px)",
+  "sm":"screen and (max-width:480px)"
+);
+
+@mixin mq($breakpoint:md){
+  @media #{map-get($breakpoints, $breakpoint)}{
+    @content;
+  }
+}
