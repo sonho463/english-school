@@ -5,7 +5,7 @@
 	top:0;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: v.$main-secondary;
+	// background-color: v.$main-secondary;
 	@include v.mq(sm){
 		padding: 0;
 	}
