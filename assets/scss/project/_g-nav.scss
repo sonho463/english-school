@@ -1,0 +1,15 @@
+@use "../foundation/variables" as v;
+
+.p-g-nav{
+	margin-left: 20px;
+}
+
+.p-g-nav__inner{
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+}
+
+.p-g-nav__item + li{
+	margin-left: 23px;
+}

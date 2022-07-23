@@ -10,6 +10,7 @@
 // layout
 // *--------------*
 @use "./layout/header";
+@use "./layout/l-mv";
 @use "./layout/footer";
 
 // *--------------*
@@ -21,7 +22,8 @@
 // *--------------*
 // project
 // *--------------*
-@use "./project/pFooter";
+@use "./project/g-nav";
+@use "./project/mv";
 
 // *--------------*
 // utility
