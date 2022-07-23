@@ -540,45 +540,6 @@ a:hover img {
   position: relative;
   width: 100%;
   height: 300px;
-  padding: 20px 5%;
-}
-
-.l-footer__logo {
-  width: 18%;
-}
-
-.l-footer__cv {
-  display: inline-block;
-  position: absolute;
-  top: 20px;
-  right: 5%;
-  width: 10%;
-}
-
-.l-footer__nav {
-  position: absolute;
-  bottom: 20px;
-  left: 5%;
-}
-
-.l-footer__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-.l-footer__menu__item {
-  font-size: 3.2rem;
-}
-.l-footer__menu__item + .l-footer__menu__item::before {
-  content: "|";
-  margin-right: 10px;
-}
-
-.l-footer__copyright {
-  position: absolute;
-  right: 5%;
-  bottom: 20px;
 }
 
 .c-inner {
@@ -663,4 +624,9 @@ a:hover img {
 }
 .c-section__lead__text {
   font-size: 2.4rem;
+}
+
+.p-footer {
+  background-color: #1B224C;
+  color: #fff;
 }

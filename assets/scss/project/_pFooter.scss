@@ -1,0 +1,6 @@
+@use "../foundation/variables" as v;
+
+.p-footer{
+	background-color: v.$main-primary;
+	color: v.$color-white;
+}
