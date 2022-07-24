@@ -18,12 +18,14 @@
 // *--------------*
 @use "./component/inner";
 @use "./component/section";
+@use "./component/button";
 
 // *--------------*
 // project
 // *--------------*
 @use "./project/g-nav";
 @use "./project/mv";
+@use "./project/intro";
 
 // *--------------*
 // utility
