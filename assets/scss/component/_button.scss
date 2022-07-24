@@ -11,4 +11,11 @@
 	width: inherit;
 	height: inherit;
 	border-radius: 100vh;
+	&--transparent-bg{
+		background-color: transparent;
+		border: 1px v.$color-white solid;
+	}
+	&__text{
+		font-weight: bold;
+	}
 }

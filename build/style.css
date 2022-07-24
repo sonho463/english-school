@@ -655,6 +655,13 @@ a:hover img {
   height: inherit;
   border-radius: 100vh;
 }
+.c-button--transparent-bg {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+.c-button__text {
+  font-weight: bold;
+}
 
 .p-g-nav {
   margin-left: 20px;
@@ -782,4 +789,107 @@ a:hover img {
   text-align: center;
   margin-top: 25px;
   color: #1B224C;
+}
+
+.l-feature {
+  padding-top: 59px;
+}
+
+.p-feature__articles {
+  margin-top: 59px;
+}
+
+.p-feature__article__heading {
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 1.5;
+}
+.p-feature__article__desc {
+  font-size: 1.6rem;
+  line-height: 1.68;
+}
+
+.p-feature__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+.p-feature__item + li {
+  margin-top: 60px;
+}
+.p-feature__item:nth-of-type(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.p-feature__item__text-block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.p-feature__item__image {
+  width: 350px;
+}
+.p-feature__item__image img {
+  max-width: unset;
+  width: 100%;
+}
+
+.p-feature__tag {
+  display: block;
+  width: 90px;
+  height: 30px;
+  background-color: #F5A623;
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.p-feature__link-price {
+  margin-top: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 25px;
+  background-image: url(../assets/images/price.jpg);
+  background-size: 100%;
+  color: #fff;
+  height: 217px;
+}
+.p-feature__link-price__heading {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.p-feature__button {
+  width: 200px;
+  height: 50px;
 }
