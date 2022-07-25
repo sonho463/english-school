@@ -604,7 +604,70 @@ a:hover img {
 .l-footer {
   position: relative;
   width: 100%;
+}
+
+.l-footer__inner {
   height: 300px;
+  background-color: #1B224C;
+  color: #fff;
+}
+.l-footer__inner .c-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.l-footer__menu {
+  padding-top: 49px;
+}
+.l-footer__menu__inner {
+  height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.l-footer__menu__item {
+  padding-right: 21px;
+}
+.l-footer__menu__item + li {
+  border-left: solid 1px #fff;
+  padding-left: 21px;
+}
+
+.l-footer__right {
+  padding-top: 35px;
+}
+
+.l-footer__info {
+  margin-top: 27px;
+  text-align: right;
+}
+
+.l-footer__info__tel {
+  font-weight: bold;
+}
+.l-footer__info__tel::before {
+  content: "";
+  display: inline-block;
+  margin-right: 5px;
+  width: 10px;
+  height: 14px;
+  background-image: url(../assets/images/tel-white.svg);
+}
+
+.l-footer__info__time {
+  margin-top: 13px;
+  font-size: 1.2rem;
+}
+
+.l-footer__bottom {
+  font-weight: bold;
+  text-align: right;
+  padding-top: 12px;
+  padding-bottom: 11px;
 }
 
 .c-inner {
@@ -943,4 +1006,24 @@ a:hover img {
 
 .p-cta .c-link-contact {
   margin-top: 22px;
+}
+
+.l-tel {
+  height: 80px;
+}
+
+.p-tel {
+  text-align: center;
+  line-height: 80px;
+}
+.p-tel__heading {
+  font-weight: bold;
+}
+.p-tel__number {
+  margin-left: 20px;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.p-tel__time {
+  margin-left: 20px;
 }
