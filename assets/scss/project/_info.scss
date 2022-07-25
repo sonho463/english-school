@@ -1,0 +1,67 @@
+@use "../foundation/variables" as v;
+
+.l-info {
+  margin-top: 90px;
+}
+
+.p-info__container {
+  display: flex;
+  > div {
+    flex: 1;
+  }
+}
+
+.p-info {
+  &__heading {
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+}
+
+.p-info__blog {
+  padding-right: 67px;
+  &__item {
+    display: flex;
+  }
+	&__item + li{
+		margin-top: 31px;
+	}
+  &__image-block {
+    position: relative;
+  }
+  &__category {
+    position: absolute;
+		background-color: v.$main-primary;
+		color: v.$color-white;
+		font-size:1.2rem;
+		width: 78px;height: 23px;
+		text-align: center;
+		line-height: 23px;
+  }
+  &__image {
+    width: 150px;
+  }
+  &__text-block {
+    flex: 1;
+    padding-left: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+  }
+}
+
+.p-info__information{
+	&__item{
+		height: 87px;
+		& + li{
+			margin-top: 17px;
+		}
+	}
+	&__date{
+		font-size:1.2rem;
+	}
+	&__title{
+		margin-top: 6px;
+	}
+}
