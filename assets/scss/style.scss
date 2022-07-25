@@ -19,6 +19,7 @@
 @use "./component/inner";
 @use "./component/section";
 @use "./component/button";
+@use "./component/link-contact";
 
 // *--------------*
 // project
@@ -27,6 +28,7 @@
 @use "./project/mv";
 @use "./project/intro";
 @use "./project/feature";
+@use "./project/cta";
 
 // *--------------*
 // utility

@@ -642,6 +642,16 @@ a:hover img {
   font-weight: bold;
 }
 
+.c-link-contact {
+  margin-top: 22px;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #fff;
+}
+.c-link-contact:hover {
+  text-decoration: none;
+}
+
 .p-g-nav {
   margin-left: 20px;
 }
@@ -818,6 +828,38 @@ a:hover img {
 .p-feature__button {
   width: 200px;
   height: 50px;
+}
+
+.l-cta {
+  height: 256px;
+  background-image: url(../assets/images/cta-image.jpg);
+}
+
+.p-cta {
+  height: inherit;
+}
+
+.p-cta .c-inner {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-cta__heading {
+  color: #fff;
+  font-size: 3.2rem;
+}
+
+.p-cta__button {
+  width: 280px;
+  height: 50px;
+  margin-top: 16px;
+}
+
+.p-cta .c-link-contact {
+  margin-top: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
