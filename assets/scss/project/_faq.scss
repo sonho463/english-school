@@ -1,0 +1,47 @@
+@use "../foundation/variables" as v;
+
+.l-faq {
+  padding-top: 75px;
+}
+
+.p-faq__contents {
+  padding-top: 32px;
+}
+
+.p-faq__item {
+  border-top: v.$main-primary 1px solid;
+  border-bottom: v.$main-primary 1px solid;
+	// height: 65px;
+}
+
+
+.p-faq__question {
+	background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  &::after {
+    content: "ー";
+    font-size: 2.5rem;
+    padding-right: 1%;
+  }
+}
+
+.p-faq__answer {
+	position: relative;z-index: -1;
+  background-color: v.$color-pale-gray;
+  line-height: 65px;
+	height: 0px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all .5s;
+  &__text {
+    padding-left: 26px;
+  }
+}
+.p-faq__answer.open{
+	height: 65px;
+	visibility: visible;
+	opacity: 1;
+}
