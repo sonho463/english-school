@@ -2,9 +2,14 @@
 
 .l-cta{
 	margin-top: 119px;
-	height: 256px;
+	height: 17vw;
+	min-height: 256px;
+	max-height: 400px;
 	background-image: url(../assets/images/cta-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
+
 
 .p-cta{
 	height: inherit;

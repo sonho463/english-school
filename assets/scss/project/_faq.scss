@@ -35,12 +35,14 @@
 	height: 0px;
 	visibility: hidden;
 	opacity: 0;
-	transition: all .5s;
+	transition: height .3s, visibility .1s, opacity .1s;
   &__text {
     padding-left: 26px;
   }
 }
 .p-faq__answer.open{
+	transition: height .3s, visibility .5s, opacity .5s;
+
 	height: 65px;
 	visibility: visible;
 	opacity: 1;

@@ -671,7 +671,7 @@ a:hover img {
 }
 
 .c-inner {
-  max-width: 1194px;
+  max-width: 1280px;
   width: 70.7%;
   margin-left: auto;
   margin-right: auto;
@@ -988,6 +988,7 @@ a:hover img {
 }
 
 .p-success__list {
+  margin-top: 137px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1013,6 +1014,10 @@ a:hover img {
 
 .p-success__item__image {
   margin-top: 10px;
+}
+.p-success__item__image img {
+  max-width: unset;
+  width: 100%;
 }
 
 .p-success__attr,
@@ -1129,14 +1134,16 @@ a:hover img {
   height: 0px;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: height 0.3s, visibility 0.1s, opacity 0.1s;
+  transition: height 0.3s, visibility 0.1s, opacity 0.1s;
 }
 .p-faq__answer__text {
   padding-left: 26px;
 }
 
 .p-faq__answer.open {
+  -webkit-transition: height 0.3s, visibility 0.5s, opacity 0.5s;
+  transition: height 0.3s, visibility 0.5s, opacity 0.5s;
   height: 65px;
   visibility: visible;
   opacity: 1;
@@ -1222,8 +1229,12 @@ a:hover img {
 
 .l-cta {
   margin-top: 119px;
-  height: 256px;
+  height: 17vw;
+  min-height: 256px;
+  max-height: 400px;
   background-image: url(../assets/images/cta-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .p-cta {
