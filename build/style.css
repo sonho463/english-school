@@ -1115,6 +1115,7 @@ a:hover img {
       -ms-flex-align: center;
           align-items: center;
   height: 65px;
+  cursor: pointer;
 }
 .p-faq__question::after {
   content: "ー";
@@ -1123,8 +1124,6 @@ a:hover img {
 }
 
 .p-faq__answer {
-  position: relative;
-  z-index: -1;
   background-color: #F8F8F8;
   line-height: 65px;
   height: 0px;
