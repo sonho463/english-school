@@ -1,0 +1,52 @@
+@use "../foundation/variables" as v;
+
+.l-flow {
+  padding-top: 58px;
+}
+
+.p-flow {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-flow__table {
+	width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+	tr{
+		height: 64px;
+		background-color: v.$color-pale-gray;
+	}
+  tr td:first-of-type {
+		width: 64px;
+		height: 64px;
+    text-align: center;
+    line-height: 64px;
+    color: v.$color-white;
+    background-color: v.$main-secondary;
+  }
+  tr td:nth-of-type(2) {
+    width: calc((100% - 64px) * 1 / 3);
+    font: size 1.8rem;
+    font-weight: bold;
+    padding-left: 1%;
+		line-height: 64px;
+		position: relative;
+		&::after{
+			content: '';
+			width: 100%;
+			height: 30px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right:0;
+			border-right: 1px solid v.$color-gray;
+		}
+  }
+  tr td:last-of-type {
+		line-height: 64px;
+    width: calc((100% - 64px) * 2 / 3);
+    padding-left: 5%;
+  }
+}
