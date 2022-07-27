@@ -15,6 +15,9 @@
 .p-success__list__inner{
 	display: flex;
 	gap: 30px;
+	@include v.mq(sm){
+		flex-direction: column;
+	}
 }
 
 .p-success__list{

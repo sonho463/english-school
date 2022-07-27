@@ -490,15 +490,28 @@ a:hover img {
 }
 
 .l-header {
-  z-index: 200;
-}
-
-.l-cv-button {
-  z-index: 100;
+  position: relative;
+  z-index: 2;
 }
 
 .l-main {
-  z-index: 5;
+  z-index: 1;
+}
+
+.p-g-nav {
+  z-index: 10;
+}
+
+.l-header__logo {
+  z-index: 11;
+}
+
+.l-header__right {
+  z-index: 10;
+}
+
+.hamburger {
+  z-index: 20;
 }
 
 .c-section__title {
@@ -523,6 +536,13 @@ a:hover img {
   padding-right: 1.2%;
   padding-left: 1.2%;
 }
+@media screen and (max-width:480px) {
+  .l-header {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .l-header__inner,
 .l-header__left,
@@ -531,6 +551,12 @@ a:hover img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width:480px) {
+  .l-header__right {
+    display: none;
+  }
 }
 
 .l-header__logo {
@@ -579,6 +605,44 @@ a:hover img {
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 50px;
+}
+
+@media screen and (max-width:480px) {
+  .l-header.nav-open .l-header__right {
+    display: block;
+  }
+  .l-header.nav-open .p-g-nav {
+    display: block;
+  }
+}
+.hamburger {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  display: none;
+}
+@media screen and (max-width:480px) {
+  .hamburger {
+    display: flex;
+  }
+}
+.hamburger__line {
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: #333;
+}
+.hamburger__line:first-of-type {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+.hamburger__line:last-of-type {
+  transform: translateY(5px);
+  transition: transform 0.3s;
+}
+.hamburger__line--black {
+  background-color: #333;
 }
 
 .l-mv {
@@ -712,11 +776,34 @@ a:hover img {
 .p-g-nav {
   margin-left: 20px;
 }
+@media screen and (max-width:480px) {
+  .p-g-nav {
+    display: none;
+    padding-top: 56px;
+    background-color: pink;
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 0;
+  }
+}
 
+@media screen and (max-width:480px) {
+  .p-g-nav.nav-open {
+    display: block;
+  }
+}
 .p-g-nav__inner {
   display: flex;
   align-items: center;
   font-weight: bold;
+}
+@media screen and (max-width:480px) {
+  .p-g-nav__inner {
+    display: block;
+  }
 }
 
 .p-g-nav__item + li {
@@ -903,6 +990,11 @@ a:hover img {
 .p-success__list__inner {
   display: flex;
   gap: 30px;
+}
+@media screen and (max-width:480px) {
+  .p-success__list__inner {
+    flex-direction: column;
+  }
 }
 
 .p-success__list {

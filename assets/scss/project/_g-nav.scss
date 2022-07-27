@@ -1,15 +1,35 @@
 @use "../foundation/variables" as v;
 
-.p-g-nav{
-	margin-left: 20px;
+.p-g-nav {
+  margin-left: 20px;
+  @include v.mq(sm) {
+    display: none;
+    padding-top: 56px;
+    background-color: pink;
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 0;
+  }
 }
 
-.p-g-nav__inner{
-	display: flex;
-	align-items: center;
-	font-weight: bold;
+@include v.mq(sm) {
+  .p-g-nav.nav-open {
+    display: block;
+  }
 }
 
-.p-g-nav__item + li{
-	margin-left: 23px;
+.p-g-nav__inner {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  @include v.mq(sm) {
+    display: block;
+  }
+}
+
+.p-g-nav__item + li {
+  margin-left: 23px;
 }
