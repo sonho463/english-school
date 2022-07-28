@@ -8,6 +8,10 @@
 	background-image: url(../assets/images/cta-image.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	@include v.mq(sm){
+		height: 50vw;
+		min-height: unset;
+	}
 }
 
 
@@ -26,12 +30,19 @@
 .p-cta__heading{
 	color:v.$color-white;
 	font-size: 3.2rem;
+	@include v.mq(sm){
+		font-size: 2.0rem;
+	}
 }
 
 .p-cta__button{
 	width: 280px;
 	height: 50px;
 	margin-top: 16px;
+	@include v.mq(sm){
+		width: 200px;
+		height: 36px;
+	}
 }
 
 .p-cta .c-link-contact{
