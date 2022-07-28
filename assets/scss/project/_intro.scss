@@ -16,10 +16,16 @@
     margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
+		@include v.mq(sm){
+			display: block;
+		}
   }
   &__item {
     line-height: 2;
     text-align: center;
+		@include v.mq(sm){
+			text-align: justify;
+		}
   }
 }
 
@@ -55,5 +61,10 @@
     text-align: center;
     margin-top: 25px;
     color: v.$main-primary;
+		@include v.mq(sm){
+			text-align:justify;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
   }
 }

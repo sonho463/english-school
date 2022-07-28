@@ -12,6 +12,10 @@
   border-top: v.$main-primary 1px solid;
   border-bottom: v.$main-primary 1px solid;
 	// height: 65px;
+	@include v.mq(sm){
+		padding-right: 5%;
+		padding-left: 5%;
+	}
 }
 
 
@@ -20,12 +24,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 65px;
+  height: fit-content;
+  height: 64px;
+	padding-top: 10px;padding-bottom: 10px;
 	cursor: pointer;
   &::after {
     content: "ー";
     font-size: 2.5rem;
     padding-right: 1%;
+		padding-left: 8%;
   }
 }
 
@@ -35,15 +42,20 @@
 	height: 0px;
 	visibility: hidden;
 	opacity: 0;
-	transition: height .3s, visibility .1s, opacity .1s;
+	transition:
+		height .3s,
+		visibility .1s,
+		opacity .1s;
   &__text {
     padding-left: 26px;
   }
 }
 .p-faq__answer.open{
-	transition: height .3s, visibility .5s, opacity .5s;
-
-	height: 65px;
+	transition:
+		height .3s,
+		visibility .5s,
+		opacity .5s;
 	visibility: visible;
 	opacity: 1;
+	height: 64px;
 }

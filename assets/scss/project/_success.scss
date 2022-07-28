@@ -28,6 +28,11 @@
 
 .p-success__item{
 	width: 30.9%;
+	@include v.mq(sm){
+		width: 100%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 	&__info{
 		margin-top: 16px;
 	}

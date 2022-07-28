@@ -26,6 +26,11 @@
   display: flex;
   justify-content: space-between;
   column-gap: 50px;
+	@include v.mq(sm){
+		display: block;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
   & + li {
     margin-top: 60px;
   }
@@ -70,12 +75,22 @@
 	background-size: 100%;
   color: v.$color-white;
   height: 217px;
+	@include v.mq(sm){
+		height: 120px;
+		row-gap: 10px;
+	}
 	&__heading{
 		font-size: 2.6rem;
 		font-weight: bold;
+		@include v.mq(sm){
+			font-size: 1.8rem;
+		}
 	}
 }
 .p-feature__button {
   width: 200px;
   height: 50px;
+	@include v.mq(sm){
+		height: 38px;
+	}
 }
