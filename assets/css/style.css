@@ -1215,6 +1215,8 @@ a:hover img {
 
 .p-faq__item {
   border-top: #1B224C 1px solid;
+}
+.p-faq__item:last-of-type {
   border-bottom: #1B224C 1px solid;
 }
 @media screen and (max-width:480px) {
