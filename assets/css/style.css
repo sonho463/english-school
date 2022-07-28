@@ -1232,10 +1232,14 @@ a:hover img {
   justify-content: space-between;
   align-items: center;
   height: fit-content;
-  height: 64px;
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
+}
+@media screen and (max-width:480px) {
+  .p-faq__question {
+    font-size: 1.4rem;
+  }
 }
 .p-faq__question::after {
   content: "ー";
@@ -1253,9 +1257,16 @@ a:hover img {
   max-height: 0;
   transition: height 5s, visibility 0.2s, opacity 0.2s, max-height 1s;
   transition-delay: height 1s;
+  line-height: 2;
 }
 .p-faq__answer__text {
-  padding-left: 26px;
+  display: inline-block;
+  padding: 10px 5% 10px;
+}
+@media screen and (max-width:480px) {
+  .p-faq__answer__text {
+    font-size: 1.4rem;
+  }
 }
 
 .p-faq__answer.open {
