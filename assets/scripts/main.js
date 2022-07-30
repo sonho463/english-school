@@ -12,10 +12,14 @@ faqQuestions.forEach((q) => {
   });
 });
 
-const header = document.querySelector('.l-header')
+const header = document.querySelector(".l-header");
 
 const navOpen = () => {
-	header.classList.contains('nav-open')
-	? header.classList.remove('nav-open')
-	: header.classList.add('nav-open')
+  if (header.classList.contains("nav-open")) {
+    header.classList.remove("nav-open");
+		document.body.style.overflow="";
+  } else {
+		header.classList.add("nav-open");
+		document.body.style.overflow="hidden";
+  }
 };
