@@ -2,7 +2,7 @@
 
 .p-g-nav {
   margin-left: 20px;
-  @include v.mq(sm) {
+  @include v.mq(lg) {
     display: none;
     padding-top: 56px;
     background-color: pink;
@@ -15,7 +15,7 @@
   }
 }
 
-@include v.mq(sm) {
+@include v.mq(lg) {
   .p-g-nav.nav-open {
     display: block;
   }
@@ -25,11 +25,12 @@
   display: flex;
   align-items: center;
   font-weight: bold;
-  @include v.mq(sm) {
+  gap: 23px;
+  @include v.mq(lg) {
     display: block;
   }
 }
 
 .p-g-nav__item + li {
-  margin-left: 23px;
+  // margin-left: 23px;
 }

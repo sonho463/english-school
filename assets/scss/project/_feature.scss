@@ -1,7 +1,7 @@
 @use "../foundation/variables" as v;
 .l-feature {
   padding-top: 59px;
-	padding-bottom: 39px;
+  padding-bottom: 39px;
 }
 
 .p-feature__articles {
@@ -26,11 +26,11 @@
   display: flex;
   justify-content: space-between;
   column-gap: 50px;
-	@include v.mq(sm){
-		display: block;
-		padding-right: 5%;
-		padding-left: 5%;
-	}
+  @include v.mq(lg) {
+    display: block;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
   & + li {
     margin-top: 60px;
   }
@@ -66,31 +66,31 @@
 
 .p-feature__link-price {
   margin-top: 93px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	row-gap: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25px;
   background-image: url(../assets/images/price.jpg);
-	background-size: 100%;
+  background-size: 100%;
   color: v.$color-white;
   height: 217px;
-	@include v.mq(sm){
-		height: 120px;
-		row-gap: 10px;
-	}
-	&__heading{
-		font-size: 2.6rem;
-		font-weight: bold;
-		@include v.mq(sm){
-			font-size: 1.8rem;
-		}
-	}
+  @include v.mq(lg) {
+    height: 120px;
+    row-gap: 10px;
+  }
+  &__heading {
+    font-size: 2.6rem;
+    font-weight: bold;
+    @include v.mq(lg) {
+      font-size: 1.8rem;
+    }
+  }
 }
 .p-feature__button {
   width: 200px;
   height: 50px;
-	@include v.mq(sm){
-		height: 38px;
-	}
+  @include v.mq(lg) {
+    height: 38px;
+  }
 }

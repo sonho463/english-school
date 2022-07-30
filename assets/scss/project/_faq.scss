@@ -14,7 +14,7 @@
     border-bottom: v.$main-primary 1px solid;
   }
   // height: 65px;
-  @include v.mq(sm) {
+  @include v.mq(lg) {
     padding-right: 5%;
     padding-left: 5%;
   }
@@ -29,9 +29,9 @@
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
-	@include v.mq(sm){
-		font-size: 1.4rem;
-	}
+  @include v.mq(lg) {
+    font-size: 1.4rem;
+  }
   &::after {
     content: "ー";
     font-size: 2.5rem;
@@ -50,14 +50,14 @@
   max-height: 0;
   transition: height 5s, visibility 0.2s, opacity 0.2s, max-height 1s;
   transition-delay: height 1s;
-	line-height: 2;
-	&__text{
-		display: inline-block;
-		padding: 10px 5% 10px;
-		@include v.mq(sm){
-			font-size: 1.4rem;
-		}
-	}
+  line-height: 2;
+  &__text {
+    display: inline-block;
+    padding: 10px 5% 10px;
+    @include v.mq(lg) {
+      font-size: 1.4rem;
+    }
+  }
 }
 .p-faq__answer.open {
   transition: height 5s, visibility 0.3s, opacity 0.3s, max-height 1s;

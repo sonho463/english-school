@@ -16,16 +16,16 @@
     margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
-		@include v.mq(sm){
-			display: block;
-		}
+    @include v.mq(lg) {
+      display: block;
+    }
   }
   &__item {
     line-height: 2;
     text-align: center;
-		@include v.mq(sm){
-			text-align: justify;
-		}
+    @include v.mq(lg) {
+      text-align: justify;
+    }
   }
 }
 
@@ -44,27 +44,27 @@
     flex-direction: column;
     align-items: center;
   }
-	&__heading{
-		position: relative;
-	}
-	&__heading span::after{
-		z-index: -1;
-		content:'';
-		position: absolute;
-		bottom: 12px;
-		display: block;
-		height: 9px;
-		width: 84%;
-		background-color: v.$main-secondary;
-	}
+  &__heading {
+    position: relative;
+  }
+  &__heading span::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    display: block;
+    height: 9px;
+    width: 84%;
+    background-color: v.$main-secondary;
+  }
   &__desc {
     text-align: center;
     margin-top: 25px;
     color: v.$main-primary;
-		@include v.mq(sm){
-			text-align:justify;
-			padding-left: 5%;
-			padding-right: 5%;
-		}
+    @include v.mq(lg) {
+      text-align: justify;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 }

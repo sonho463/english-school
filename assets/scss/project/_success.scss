@@ -15,7 +15,7 @@
 .p-success__list__inner {
   display: flex;
   gap: 30px;
-  @include v.mq(sm) {
+  @include v.mq(lg) {
     flex-direction: column;
   }
 }
@@ -24,14 +24,14 @@
   margin-top: 137px;
   margin-left: auto;
   margin-right: auto;
-  @include v.mq(sm) {
+  @include v.mq(lg) {
     margin-top: 60px;
   }
 }
 
 .p-success__item {
   width: 30.9%;
-  @include v.mq(sm) {
+  @include v.mq(lg) {
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
