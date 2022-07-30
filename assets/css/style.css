@@ -495,6 +495,7 @@ a:hover img {
 }
 
 .l-main {
+  position: relative;
   z-index: 1;
 }
 
@@ -533,8 +534,8 @@ a:hover img {
 
 .l-header {
   height: 80px;
-  padding-right: 1.2%;
-  padding-left: 1.2%;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 @media screen and (max-width:1024px) {
   .l-header {
@@ -552,10 +553,19 @@ a:hover img {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width:1024px) {
+  .l-header__inner,
+.l-header__left,
+.l-header__right {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width:1024px) {
   .l-header__right {
     display: none;
+    position: absolute;
+    top: 56px;
   }
 }
 
@@ -564,7 +574,7 @@ a:hover img {
 }
 
 .l-header__info {
-  text-align-last: right;
+  text-align: right;
 }
 .l-header__info__time {
   font-size: 1.2rem;
@@ -608,8 +618,40 @@ a:hover img {
 }
 
 @media screen and (max-width:1024px) {
+  .l-header.nav-open .l-header__left {
+    height: unset;
+  }
   .l-header.nav-open .l-header__right {
     display: block;
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+  }
+  .l-header.nav-open .l-header__info {
+    text-align: center;
+  }
+  .l-header.nav-open .l-header__info__time {
+    font-size: 2rem;
+  }
+  .l-header.nav-open .l-header__info__tel {
+    font-size: 3.2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .l-header.nav-open .l-header__info__tel::before {
+    height: 32px;
+    width: 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .l-header.nav-open .l-header__cv {
+    margin-left: 0;
+    margin-top: 24px;
   }
   .l-header.nav-open .p-g-nav {
     display: block;
@@ -841,18 +883,21 @@ a:hover img {
 
 .p-g-nav {
   margin-left: 20px;
+  margin-right: auto;
 }
 @media screen and (max-width:1024px) {
   .p-g-nav {
+    background-color: #fff;
     display: none;
     padding-top: 56px;
-    background-color: pink;
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
     position: absolute;
     top: 0;
     right: 0;
     margin-left: 0;
+    font-size: 3rem;
+    text-align: center;
   }
 }
 

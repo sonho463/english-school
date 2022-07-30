@@ -28,27 +28,36 @@
 						<img src="./assets/images/header-logo.svg" alt="ヘッダーロゴの画像">
 					</a>
 				</div>
-				<nav class="p-g-nav">
-					<ul class="p-g-nav__inner">
-						<li class="p-g-nav__item">
-							<a href="/" class="p-g-nav__link">ホーム</a>
-						</li>
-						<li class="p-g-nav__item">
-							<a href="/info.html" class="p-g-nav__link">お知らせ</a>
-						</li>
-						<li class="p-g-nav__item">
-							<a href="/blog.html" class="p-g-nav__link">ブログ</a>
-						</li>
-						<li class="p-g-nav__item">
-							<a href="/price.html" class="p-g-nav__link">コース・料金</a>
-						</li>
-					</ul>
-				</nav>
+				<button type="button" onclick="navOpen()" class="hamburger">
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+				</button>
 			</div>
+			<nav class="p-g-nav">
+				<ul class="p-g-nav__inner">
+					<li class="p-g-nav__item">
+						<a href="/" class="p-g-nav__link">ホーム</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="/info.html" class="p-g-nav__link">お知らせ</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="/blog.html" class="p-g-nav__link">ブログ</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="/price.html" class="p-g-nav__link">コース・料金</a>
+					</li>
+				</ul>
+			</nav>
 			<div class="l-header__right">
 				<div class="l-header__info">
 					<p class="l-header__info__time">平日08:00〜20:00</p>
-					<p class="l-header__info__tel">0123-456-7890</p>
+					<p class="l-header__info__tel">
+						<a href="tel:0123-456-7890">
+							0123-456-7890
+						</a>
+					</p>
 				</div>
 				<div class="l-header__cv">
 					<a href="#" class="l-header__cv__item">
@@ -64,11 +73,7 @@
 				</div>
 			</div>
 		</div>
-		<button type="button" onclick="navOpen()" class="hamburger">
-			<span class="hamburger__line"></span>
-			<span class="hamburger__line"></span>
-			<span class="hamburger__line"></span>
-		</button>
+
 	</header>
 
 	<main class="l-main">
@@ -422,7 +427,9 @@
 								<ul class="p-info__information__list">
 									<li class="p-info__information__item">
 										<p class="p-info__information__date">2020-12-01</p>
-										<p class="p-info__information__title">2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて</p>
+										<p class="p-info__information__title">
+											2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて2021年のスケジュールについて
+										</p>
 									</li>
 									<li class="p-info__information__item">
 										<p class="p-info__information__date">2019-11-02</p>

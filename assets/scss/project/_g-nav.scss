@@ -2,16 +2,19 @@
 
 .p-g-nav {
   margin-left: 20px;
+	margin-right: auto;
   @include v.mq(lg) {
+		background-color: v.$color-white;
     display: none;
     padding-top: 56px;
-    background-color: pink;
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
     position: absolute;
     top: 0;
     right: 0;
     margin-left: 0;
+		font-size: 3rem;
+		text-align: center;
   }
 }
 

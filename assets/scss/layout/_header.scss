@@ -2,8 +2,8 @@
 
 .l-header {
   height: 80px;
-  padding-right: 1.2%;
-  padding-left: 1.2%;
+  padding-right: 2%;
+  padding-left: 2%;
   @include v.mq(lg) {
     height: 56px;
     display: flex;
@@ -18,11 +18,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include v.mq(lg) {
+    width: 100%;
+  }
 }
 
 .l-header__right {
   @include v.mq(lg) {
     display: none;
+    position: absolute;
+    top: 56px;
   }
 }
 
@@ -31,7 +36,7 @@
 }
 
 .l-header__info {
-  text-align-last: right;
+  text-align: right;
   &__time {
     font-size: 1.2rem;
   }
@@ -76,9 +81,54 @@
 
 @include v.mq(lg) {
   .l-header.nav-open {
+    // background-color: pink;
+    // height: 100vh;
+    // align-items: center;
+    // padding-top: 5%;
+    .l-header__inner {
+      // align-items: flex-start;
+      // height: 56px;
+    }
+    .l-header__left {
+      height: unset;
+      // align-items: unset;
+    }
     .l-header__right {
       display: block;
+      // background-color: yellow;
+      // opacity: 0.4;
+      position: absolute;
+      top: 40vh;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      text-align: center;
     }
+    .l-header__info {
+      text-align: center;
+			&__time{
+				font-size: 2rem;
+			}
+			&__tel{
+				font-size: 3.2rem;
+				display: flex;
+				width: 100%;
+				justify-content: center;
+				align-items: center;
+				&::before{
+					height: 32px;
+					width: 20px;
+					background-size: 100%;
+					background-repeat: no-repeat;
+
+				}
+			}
+
+    }
+		.l-header__cv{
+			margin-left: 0;
+			margin-top: 24px;
+		}
     .p-g-nav {
       display: block;
     }
