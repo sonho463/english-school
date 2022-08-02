@@ -1,0 +1,100 @@
+@use "../foundation/variables" as v;
+
+.p-page-price__price {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$main-primary;
+    color: v.$color-white;
+    width: 31%;
+    height: 90px;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  img {
+    width: 19px;
+  }
+  &__desc {
+    margin-top: 46px;
+  }
+}
+
+.p-page-price__table {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: stretch;
+  align-items: flex-end;
+  align-items: normal;
+}
+
+.p-page-price__item {
+  border: 1px solid v.$main-primary;
+  width: 24.5%;
+}
+
+.p-page-price__item {
+  &__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$main-primary;
+    color: v.$color-white;
+    height: 60px;
+    font-weight: bold;
+    // line-height: 60px;
+  }
+  &__contents {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__price {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  &__point-list {
+    margin-top: 40px;
+    line-height: 2.3;
+  }
+  &__point {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    &::before {
+      content: "";
+      display: inline-block;
+      background-image: url(../assets/images/check-mark.png);
+      width: 14px;
+      height: 9px;
+      margin-top: 14px;
+      margin-right: 5px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+  &:nth-of-type(3) {
+    position: relative;
+    border: none;
+    height: calc(100% + 40px);
+    .p-page-price__item__contents {
+      border: 1px solid v.$main-primary;
+      border-top: none;
+    }
+    h3 {
+      border-color: v.$main-secondary;
+      background-color: v.$main-secondary;
+      height: 96px;
+      line-height: 2;
+    }
+    .p-page-price__item__price {
+      color: v.$main-secondary;
+    }
+  }
+}

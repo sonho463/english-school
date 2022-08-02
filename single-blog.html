@@ -28,47 +28,92 @@
 						<img src="./assets/images/header-logo.svg" alt="ヘッダーロゴの画像">
 					</a>
 				</div>
-				<nav class="p-g-nav">
-					<ul class="p-g-nav__inner">
-						<li class="p-g-nav__item">
-							<a href="/" class="p-g-nav__link">ホーム</a>
-						</li>
-						<li class="p-g-nav__item">
-							<a href="/info.html" class="p-g-nav__link">お知らせ</a>
-						</li>
-						<li class="p-g-nav__item">
-							<a href="/blog.html" class="p-g-nav__link">ブログ</a>
-						</li>
-						<li class="p-g-nav__item">
-							<a href="/price.html" class="p-g-nav__link">コース・料金</a>
-						</li>
-					</ul>
-				</nav>
+				<button type="button" onclick="navOpen()" class="hamburger">
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+				</button>
 			</div>
+			<nav class="p-g-nav">
+				<ul class="p-g-nav__inner">
+					<li class="p-g-nav__item">
+						<a href="/" class="p-g-nav__link">ホーム</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="/archive-news.html" class="p-g-nav__link">お知らせ</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="/archive-blog.html" class="p-g-nav__link">ブログ</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="/page-price.html" class="p-g-nav__link">コース・料金</a>
+					</li>
+				</ul>
+			</nav>
 			<div class="l-header__right">
 				<div class="l-header__info">
 					<p class="l-header__info__time">平日08:00〜20:00</p>
-					<p class="l-header__info__tel">0123-456-7890</p>
+					<p class="l-header__info__tel">
+						<a href="tel:0123-456-7890">
+							0123-456-7890
+						</a>
+					</p>
 				</div>
 				<div class="l-header__cv">
-					<a href="#" class="l-header__cv__item">
+					<a href="page-contact.html" class="l-header__cv__item">
 						<span class="l-header__cv__text">
 							資料請求
 						</span>
 					</a>
-					<a href="#" class="l-header__cv__item">
+					<a href="page-contact.html" class="l-header__cv__item">
 						<span class="l-header__cv__text">
 							お問い合わせ
 						</span>
 					</a>
 				</div>
 			</div>
-
 		</div>
+
 	</header>
 
 	<main class="l-main">
-		PRICE
+		ブログ
+
+
+
+		<section class="l-cta">
+			<div class="p-cta">
+				<div class="c-inner">
+					<h2 class="p-cta__heading c-section__title">
+						まずは無料で資料請求から
+					</h2>
+					<div class="p-cta__button">
+						<a href="#" class="c-button">
+							<span class="c-button__text">資料請求</span>
+						</a>
+					</div>
+					<a class="c-link-contact">
+						<span class="c-link-contact__text">
+							お問い合わせ
+						</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="l-tel">
+			<div class="p-tel">
+				<div class="c-inner">
+					<span class="p-tel__heading">お電話でのお問い合わせはこちら</span>
+					<a href="tel:0123-456-7890">
+						<span class="p-tel__number">
+							0123-456-7890
+						</span>
+					</a>
+					<span class="p-tel__time">平日 08:00~20:00</span>
+				</div>
+			</div>
+		</section>
+
 
 	</main>
 
@@ -82,10 +127,10 @@
 							<a href="/" class="l-footer__menu__link">ホーム</a>
 						</li>
 						<li class="l-footer__menu__item">
-							<a href="/info.html" class="l-footer__menu__link">お知らせ</a>
+							<a href="/archive-news.html" class="l-footer__menu__link">お知らせ</a>
 						</li>
 						<li class="l-footer__menu__item">
-							<a href="/blog.html" class="l-footer__menu__link">ブログ</a>
+							<a href="/archive-blog.html" class="l-footer__menu__link">ブログ</a>
 						</li>
 						<li class="l-footer__menu__item">
 							<a href="/price.html" class="l-footer__menu__link">コース・料金</a>
@@ -100,7 +145,11 @@
 						</a>
 					</div>
 					<div class="l-footer__info">
-						<p class="l-footer__info__tel">0123-456-7890</p>
+						<p class="l-footer__info__tel">
+							<a href="tel:0123-456-7890">
+								0123-456-7890
+							</a>
+						</p>
 						<p class="l-footer__info__time">平日08:00〜20:00</p>
 					</div>
 				</div>

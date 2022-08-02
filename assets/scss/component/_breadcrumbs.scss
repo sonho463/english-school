@@ -1,0 +1,18 @@
+@use "../foundation/variables" as v;
+
+.c-breadcrumbs{
+	background-color: v.$color-pale-gray;
+	height: 50px;
+}
+
+.c-breadcrumbs__list{
+	height: inherit;
+	display: flex;
+	align-items: center;
+}
+
+.c-breadcrumbs__item + li{
+	&::before{
+		content: '＞';
+	}
+}

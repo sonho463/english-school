@@ -81,22 +81,11 @@
 
 @include v.mq(lg) {
   .l-header.nav-open {
-    // background-color: pink;
-    // height: 100vh;
-    // align-items: center;
-    // padding-top: 5%;
-    .l-header__inner {
-      // align-items: flex-start;
-      // height: 56px;
-    }
     .l-header__left {
       height: unset;
-      // align-items: unset;
     }
     .l-header__right {
       display: block;
-      // background-color: yellow;
-      // opacity: 0.4;
       position: absolute;
       top: 40vh;
       left: 0;
@@ -160,4 +149,19 @@
   &__line--black {
     background-color: v.$color-black;
   }
+}
+
+.l-header.nav-open .hamburger__line{
+	&:first-of-type {
+		transform: translateY(2px) rotate(495deg);
+		transition: transform 0.3s;
+	}
+	&:nth-of-type(2){
+		opacity:0;
+		transition: .3s;
+	}
+	&:last-of-type {
+		transform: translateY(-2px) rotate(-135deg);
+		transition: transform 0.3s;
+	}
 }

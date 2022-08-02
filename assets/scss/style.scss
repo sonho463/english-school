@@ -20,6 +20,8 @@
 @use "./component/section";
 @use "./component/button";
 @use "./component/link-contact";
+@use "./component/breadcrumbs";
+@use "./component/subpage-mv";
 
 // *--------------*
 // project
@@ -34,6 +36,7 @@
 @use "./project/info";
 @use "./project/cta";
 @use "./project/tel";
+@use "./project/page-price";
 
 // *--------------*
 // utility
