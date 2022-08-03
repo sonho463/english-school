@@ -1,0 +1,30 @@
+@use "../foundation/variables" as v;
+
+.p-blog-archive {
+  .c-info__blog {
+    margin-top: 60px;
+    &__item {
+      height: fit-content;
+      height: 180px;
+    }
+    &__item + li {
+      margin-top: 93px;
+    }
+    &__image {
+      width: 240px;
+    }
+    &__title {
+      height: 76px;
+      font-size: 2.6rem;
+      line-height: 1.5;
+    }
+    &__desc {
+      margin-top: 10px;
+      height: 48px;
+      overflow: hidden;
+    }
+  }
+  .c-pagination {
+    margin-top: 106px;
+  }
+}

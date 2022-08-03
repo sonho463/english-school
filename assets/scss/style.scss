@@ -22,6 +22,8 @@
 @use "./component/link-contact";
 @use "./component/breadcrumbs";
 @use "./component/subpage-mv";
+@use "./component/info-blog";
+@use "./component/pagination";
 
 // *--------------*
 // project
@@ -37,6 +39,7 @@
 @use "./project/cta";
 @use "./project/tel";
 @use "./project/page-price";
+@use "./project/blog-archive";
 
 // *--------------*
 // utility
