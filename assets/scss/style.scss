@@ -11,6 +11,7 @@
 // *--------------*
 @use "./layout/header";
 @use "./layout/l-mv";
+@use "./layout/l-single-blog";
 @use "./layout/footer";
 
 // *--------------*
@@ -40,6 +41,8 @@
 @use "./project/tel";
 @use "./project/page-price";
 @use "./project/blog-archive";
+@use "./project/news-archive";
+@use "./project/p-single-blog";
 
 // *--------------*
 // utility
