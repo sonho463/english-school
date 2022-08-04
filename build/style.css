@@ -2108,7 +2108,7 @@ td.p-page-price__table__desc:last-of-type li::before {
   margin-top: 65px;
 }
 
-.p-single-blog__post__category {
+.c-post__category {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2123,12 +2123,12 @@ td.p-page-price__table__desc:last-of-type li::before {
   background-color: #1B224C;
   color: #fff;
 }
-.p-single-blog__post__title {
+.c-post__title {
   margin-top: 30px;
   font-size: 2.8rem;
   font-weight: bold;
 }
-.p-single-blog__post__info-block {
+.c-post__info-block {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2140,33 +2140,33 @@ td.p-page-price__table__desc:last-of-type li::before {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.p-single-blog__post__image {
+.c-post__image {
   margin-top: 22px;
 }
-.p-single-blog__post__image img {
+.c-post__image img {
   width: 100%;
 }
 
-.p-single-blog__post__article {
+.c-post__article {
   margin-top: 40px;
 }
-.p-single-blog__post__article h2 {
+.c-post__article h2 {
   font-size: 2.6rem;
   font-weight: bold;
   margin-bottom: 30px;
 }
-.p-single-blog__post__article h3 {
+.c-post__article h3 {
   padding-left: 15px;
   margin-bottom: 27px;
   font-size: 2.2rem;
   font-weight: bold;
   border-left: 4px solid #1B224C;
 }
-.p-single-blog__post__article > p {
+.c-post__article > p {
   font-size: 1.6rem;
   margin-bottom: 50px;
 }
-.p-single-blog__post__article blockquote {
+.c-post__article blockquote {
   padding: 30px 5%;
   margin-bottom: 30px;
   font-size: 1.6rem;
@@ -2178,7 +2178,7 @@ td.p-page-price__table__desc:last-of-type li::before {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.p-single-blog__post__article blockquote::before {
+.c-post__article blockquote::before {
   content: "";
   display: block;
   margin-right: 20px;
@@ -2188,24 +2188,24 @@ td.p-page-price__table__desc:last-of-type li::before {
   background-size: 100%;
   background-repeat: no-repeat;
 }
-.p-single-blog__post__article .p-single-blog__post__block-image {
+.c-post__article .c-post__block-image {
   margin-bottom: 30px;
 }
-.p-single-blog__post__article .p-single-blog__post__block-image img {
+.c-post__article .c-post__block-image img {
   width: 100%;
 }
-.p-single-blog__post__article ul {
+.c-post__article ul {
   margin-bottom: 60px;
   padding-left: 1em;
 }
-.p-single-blog__post__article li {
+.c-post__article li {
   list-style-type: "●";
   padding-left: 21px;
 }
-.p-single-blog__post__article li::marker {
+.c-post__article li::marker {
   color: #F5A623;
 }
-.p-single-blog__post__article a {
+.c-post__article a {
   color: #F5A623;
 }
 
@@ -2249,6 +2249,21 @@ td.p-page-price__table__desc:last-of-type li::before {
 }
 .p-single-blog__category__item {
   list-style: disc inside;
+}
+
+.p-single-news {
+  margin-top: 60px;
+}
+.p-single-news .c-post__date {
+  margin-top: 30px;
+  text-align: right;
+}
+.p-single-news .c-post__article .c-post__block-image {
+  width: 45%;
+}
+.p-single-news blockquote::before {
+  width: 40px;
+  height: 40px;
 }
 
 .u-active-sp {
