@@ -3,6 +3,10 @@
 .c-breadcrumbs{
 	background-color: v.$color-pale-gray;
 	height: 50px;
+	@include v.mq(lg){
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 }
 
 .c-breadcrumbs__list{

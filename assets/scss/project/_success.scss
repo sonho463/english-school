@@ -33,6 +33,9 @@
   width: 30.9%;
   @include v.mq(lg) {
     width: 100%;
+		max-width: 500px;
+		margin-right: auto;
+		margin-left: auto;
     padding-left: 5%;
     padding-right: 5%;
   }

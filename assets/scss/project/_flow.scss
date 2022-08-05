@@ -16,6 +16,9 @@
   border-spacing: 0px 10px;
   @include v.mq(lg) {
     border-spacing: 0 24px;
+		max-width: 500px;
+		margin-right: auto;
+		margin-left: auto;
   }
   tr {
     height: 64px;

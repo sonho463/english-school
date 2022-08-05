@@ -1,6 +1,12 @@
 @use "../foundation/variables" as v;
 
 .p-archive-news {
+	.c-inner{
+		@include v.mq(lg){
+			padding-right: 5%;
+			padding-left: 5%;
+		}
+	}
   &__information {
     margin-top: 45px;
   }

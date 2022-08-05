@@ -75,3 +75,17 @@
 	width: 200px;
 	height: 50px;
 }
+
+.p-page-thanks{
+	padding-top: 83px;
+	padding-bottom: 80px;
+	.c-inner{
+		text-align: center;
+	}
+	&__text	{
+	}
+	&__back{
+		display: block;
+		margin-top: 83px;
+	}
+}

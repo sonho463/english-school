@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- AOS -->
+	<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<!-- main-css -->
+	<link rel="stylesheet" href="./build/style.css">
+	<title>English-school｜しょーごログコーディング教材上級</title>
+	<meta name="description" content="しょーごログ様が提供してくれているコーディング練習用教材をコーディング、WordPress化しました" />
+	<meta name="keywords" content="コーディング, 教材, WordPress" />
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+
+</head>
+
+<body>
+	<header class="l-header">
+		<div class="l-header__inner">
+			<div class="l-header__left">
+				<div class="l-header__logo">
+					<a href="/">
+						<img src="./assets/images/header-logo.svg" alt="ヘッダーロゴの画像">
+					</a>
+				</div>
+				<button type="button" onclick="navOpen()" class="hamburger">
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+					<span class="hamburger__line"></span>
+				</button>
+			</div>
+			<nav class="p-g-nav">
+				<ul class="p-g-nav__inner">
+					<li class="p-g-nav__item">
+						<a href="/" class="p-g-nav__link">ホーム</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="/archive-news.html" class="p-g-nav__link">お知らせ</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="/archive-blog.html" class="p-g-nav__link">ブログ</a>
+					</li>
+					<li class="p-g-nav__item">
+						<a href="/page-price.html" class="p-g-nav__link">コース・料金</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="l-header__right">
+				<div class="l-header__info">
+					<p class="l-header__info__time">
+						平日08:00〜20:00
+					</p>
+					<p class="l-header__info__tel">
+						<a href="tel:0123-456-7890">
+							0123-456-7890
+						</a>
+					</p>
+				</div>
+				<div class="l-header__cv">
+					<a href="page-contact.html" class="l-header__cv__item">
+						<span class="l-header__cv__text">
+							資料請求
+						</span>
+					</a>
+					<a href="page-contact.html" class="l-header__cv__item">
+						<span class="l-header__cv__text">
+							お問い合わせ
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<main class="l-main">
+
+		<section class="c-breadcrumbs">
+			<ul class="c-breadcrumbs__list c-inner">
+				<li class="c-breadcrumbs__item">
+					<a href="/" class="c-breadcrumbs__link">
+						ホーム
+					</a>
+				</li>
+				<li class="c-breadcrumbs__item">
+					<a href="/" class="c-breadcrumbs__link">
+						送信完了
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="p-page-thanks">
+			<div class="c-inner">
+				<p class="p-page-thanks__text">
+					お問い合わせいただきありがとうございます
+				<br>
+					内容を確認した後、担当者よりご連絡いたします
+				</p>
+				<a href="/" class="p-page-thanks__back">
+					ホームへ戻る
+				</a>
+
+
+			</div>
+		</section>
+	</main>
+
+
+	<footer class="l-footer js-footer">
+		<div class="l-footer__inner">
+			<div class="c-inner">
+				<nav class="l-footer__menu">
+					<ul class="l-footer__menu__inner">
+						<li class="l-footer__menu__item">
+							<a href="/" class="l-footer__menu__link">ホーム</a>
+						</li>
+						<li class="l-footer__menu__item">
+							<a href="/archive-news.html" class="l-footer__menu__link">お知らせ</a>
+						</li>
+						<li class="l-footer__menu__item">
+							<a href="/archive-blog.html" class="l-footer__menu__link">ブログ</a>
+						</li>
+						<li class="l-footer__menu__item">
+							<a href="/price.html" class="l-footer__menu__link">コース・料金</a>
+
+						</li>
+					</ul>
+				</nav>
+				<div class="l-footer__right">
+					<div class="l-footer__logo">
+						<a href="/">
+							<img src="./assets/images/footer-logo.svg" alt="">
+						</a>
+					</div>
+					<div class="l-footer__info">
+						<p class="l-footer__info__tel">
+							<a href="tel:0123-456-7890">
+								0123-456-7890
+							</a>
+						</p>
+						<p class="l-footer__info__time">平日08:00〜20:00</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<p class="l-footer__bottom c-inner">
+			&copy; 2020 Engress.
+		</p>
+	</footer>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<!-- AOS -->
+	<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script> -->
+	<!-- メインのJavaScript -->
+	<script src="./assets/scripts/main.js"></script>
+
+</body>
+
+</html>
