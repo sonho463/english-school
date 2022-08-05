@@ -2,18 +2,39 @@
 
 .p-blog-archive {
 	margin-top: 58px;
+	.c-inner{
+		@include v.mq(lg){
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+	}
   .c-info__blog {
     margin-top: 60px;
     &__item {
       height: fit-content;
       height: 180px;
+			@include v.mq(lg){
+				height: auto;
+			}
     }
     &__item + li {
       margin-top: 93px;
+			@include v.mq(lg){
+				margin-top: 48px;
+			}
     }
     &__image {
       width: 240px;
+			@include v.mq(lg){
+				width: 100%;
+				max-width: 500px;
+			}
     }
+		&__text-block{
+			@include v.mq(lg){
+				padding-top: 4px;
+			}
+		}
     &__title {
       height: 76px;
       font-size: 2.6rem;

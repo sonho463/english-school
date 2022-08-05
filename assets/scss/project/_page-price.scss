@@ -1,7 +1,21 @@
 @use "../foundation/variables" as v;
 
-.p-page-price__table-section{
-margin-top: 90px;
+.p-page-price {
+  margin-top: 58px;
+  overflow-x: hidden;
+  .c-inner {
+    @include v.mq(lg) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+}
+
+.p-page-price__table-section {
+  margin-top: 90px;
+  @include v.mq(lg) {
+    margin-top: 60px;
+  }
 }
 
 .p-page-price__price {
@@ -10,6 +24,7 @@ margin-top: 90px;
   align-items: center;
   justify-content: center;
   gap: 5%;
+
   &__box {
     display: flex;
     justify-content: center;
@@ -20,6 +35,10 @@ margin-top: 90px;
     height: 90px;
     font-size: 2.2rem;
     font-weight: bold;
+    @include v.mq(lg) {
+      font-size: 1.6rem;
+      text-align: center;
+    }
   }
   img {
     width: 19px;
@@ -29,11 +48,21 @@ margin-top: 90px;
   }
 }
 
+.p-page-price__table-area {
+	position: relative;
+  @include v.mq(lg) {
+    overflow-x: scroll;
+  }
+}
+
 .p-page-price__table {
   width: 100%;
   margin-top: 106px;
   border-collapse: separate;
   border-spacing: 7px 0;
+  @include v.mq(lg) {
+    width: 1000px;
+  }
   td {
     border: 1px solid v.$main-primary;
     width: 24%;
@@ -110,4 +139,30 @@ td.p-page-price__table__desc {
 // フレックスプランのリストマークはなし
 td.p-page-price__table__desc:last-of-type li::before {
   display: none;
+}
+
+@include v.mq(lg){
+	.price-button-next {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		z-index: 50;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: rgba(0, 0, 0, 0.6);
+		width: 80px;
+		height: 70px;
+		border-radius: 10px;
+		img {
+			width: 55px;
+		}
+		&::after {
+			font-size: 1rem;
+			content: "スクロール";
+			margin-top: -5px;
+			color: #fff;
+		}
+	}
 }
