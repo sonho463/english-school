@@ -15,6 +15,9 @@
       height: 180px;
 			@include v.mq(lg){
 				height: auto;
+				max-width: 500px;
+				margin-left: auto;
+				margin-right: auto;
 			}
     }
     &__item + li {
@@ -27,7 +30,6 @@
       width: 240px;
 			@include v.mq(lg){
 				width: 100%;
-				max-width: 500px;
 			}
     }
 		&__text-block{

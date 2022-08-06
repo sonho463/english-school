@@ -1,5 +1,7 @@
 @use "../foundation/variables" as v;
 
+
+
 .c-post {
   &__category {
     display: flex;
@@ -90,6 +92,16 @@
 
 .p-single-blog__recommend {
   margin-top: 60px;
+	.c-info__blog__list{
+		@include v.mq(lg){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 500px;
+		margin-right: auto;
+		margin-left: auto;
+		}
+	}
 }
 
 .p-single-blog__aside__heading {
@@ -105,9 +117,13 @@
 .p-single-blog__related {
   .c-info__blog__item {
     height: fit-content;
+
   }
   .c-info__blog__image {
     width: 100px;
+		@include v.mq(lg){
+			width: 100%;
+		}
   }
   .c-info__blog__title {
     font-size: 1.2rem;

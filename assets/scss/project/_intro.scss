@@ -18,13 +18,14 @@
     margin-right: auto;
     @include v.mq(lg) {
       display: block;
+			margin-top: 32px;
     }
   }
   &__item {
     line-height: 2;
     text-align: center;
     @include v.mq(lg) {
-      text-align: justify;
+      text-align: center;
     }
   }
 }

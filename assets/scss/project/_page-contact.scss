@@ -5,6 +5,10 @@
   padding-bottom: 82px;
   .c-inner {
     width: 54.6%;
+		@include v.mq(lg){
+			width: 90%;
+			max-width: 600px;
+		}
   }
 }
 
